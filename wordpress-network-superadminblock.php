@@ -23,6 +23,8 @@ $wpnsa_block_theme_access = true; // true or false
 add_action('admin_init', 'wpnsa_check_block_superuser', 1);
 
 function wpnsa_check_block_superuser() {
+    global $wpnsa_allowed_superusers,$wpnsa_block_plugin_access,$wpnsa_block_theme_access;
+    
     $info = wp_get_current_user();
 
     if (!in_array($info->data->user_login, $wpnsa_allowed_superusers)) { 

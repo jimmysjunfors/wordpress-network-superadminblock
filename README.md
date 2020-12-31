@@ -18,3 +18,5 @@ If you need admin users to be able to edit/work on all sites in your network wit
 Make sure to add at least one Super Admin username to the array, or network admin will be inaccessible.
 
 Add your own specific filters to block, if you have something a regular site admin user should not have access to.
+
+If this plugin is not added to mu-plugins folder, make sure to not remove plugins block ;)
